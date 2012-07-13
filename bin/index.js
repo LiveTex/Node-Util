@@ -39,7 +39,7 @@ cli.Arguments.prototype.registerValue = function(name) {
   this.__map[name] = []
 };
 cli.Arguments.prototype.extractValues = function(agrv) {
-  var args = agrv.slice(0).concat("");
+  var args = agrv.join(" ").replace(/=/g, " ").split(" ").concat("");
   while(args.length > 0) {
     this.__applyArgument(args.shift())
   }
