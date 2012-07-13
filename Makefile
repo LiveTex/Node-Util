@@ -40,9 +40,6 @@ JS_ENV_SOURCES = $(foreach dir, $(JS_SOURCE_DIRS), \
 all : js-export
 
 
-run : js-export
-	node test/server.js
-
 
 #
 #	Include rules
