@@ -1,3 +1,0 @@
-[submodule "externs"]
-	path = externs
-	url = git@retest64:js_externs

@@ -33,10 +33,14 @@ cli.Logger.prototype.__error = function() {
 };
 cli.Arguments = function() {
   this.__map = {};
+  this.__defaults = {};
   this.__currentArg = ""
 };
-cli.Arguments.prototype.registerValue = function(name) {
-  this.__map[name] = []
+cli.Arguments.prototype.registerValue = function(name, opt_defaultValue) {
+  this.__map[name] = [];
+  if(opt_defaultValue) {
+    this.__defaults[name] = opt_defaultValue
+  }
 };
 cli.Arguments.prototype.extractValues = function(agrv) {
   var args = agrv.join(" ").replace(/=/g, " ").split(" ").concat("");
@@ -48,11 +52,17 @@ cli.Arguments.prototype.getArray = function(name) {
   if(this.__map[name] !== undefined) {
     return this.__map[name].slice(0)
   }
+  if(this.__defaults[name] !== undefined) {
+    return[].concat(this.__defaults[name])
+  }
   return null
 };
 cli.Arguments.prototype.getString = function(name) {
   if(this.__map[name] !== undefined && this.__map[name][0] !== undefined) {
     return this.__map[name][0]
+  }
+  if(this.__defaults[name] !== undefined) {
+    return String(this.__defaults[name])
   }
   return""
 };
@@ -60,10 +70,13 @@ cli.Arguments.prototype.getNumber = function(name) {
   if(this.__map[name] !== undefined && this.__map[name][0] !== undefined) {
     return Number(this.__map[name][0])
   }
+  if(this.__defaults[name] !== undefined) {
+    return Number(this.__defaults[name])
+  }
   return NaN
 };
 cli.Arguments.prototype.getBoolean = function(name) {
-  return this.__map[name] !== undefined && this.__map[name].length > 0
+  return this.__map[name] !== undefined && this.__map[name].length > 0 || Boolean(this.__defaults[name])
 };
 cli.Arguments.prototype.__applyArgument = function(arg) {
   var value = "";
