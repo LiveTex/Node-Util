@@ -97,6 +97,13 @@ cli.Arguments.prototype.__applyArgument = function(arg) {
     this.__currentArg = newArg
   }
 };
+cli.Arguments.__instance = null;
+cli.Arguments.getInstance = function() {
+  if(cli.Arguments.__instance === null) {
+    cli.Arguments.__instance = new cli.Arguments
+  }
+  return cli.Arguments.__instance
+};
 
 module.exports = cli;
 

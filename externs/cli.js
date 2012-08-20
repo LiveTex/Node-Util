@@ -55,6 +55,11 @@ cli.Arguments.prototype.getBoolean = function(name) {};
 
 
 /**
+ * @return {!cli.Arguments}
+ */
+cli.Arguments.getInstance = function() {};
+
+/**
  * @constructor
  */
 cli.Logger = function() {};
