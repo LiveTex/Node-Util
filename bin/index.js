@@ -29,7 +29,12 @@ cli.Logger.prototype.__warn = function() {
   this.__level > 1 && console.log.apply(console, cli.Logger.__getArgs("WARNING", arguments))
 };
 cli.Logger.prototype.__error = function() {
-  this.__level > 0 && console.log.apply(console, cli.Logger.__getArgs("ERROR", arguments))
+  if(this.__level > 0) {
+    console.log.apply(console, cli.Logger.__getArgs("ERROR", arguments));
+    if(arguments[0] instanceof Error) {
+      console.log(arguments[0].getStackTrace())
+    }
+  }
 };
 cli.Arguments = function() {
   this.__map = {};
