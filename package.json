@@ -1,5 +1,2 @@
-{
-    "name": "Node-Cli",
-    "version": "0.0.1",
-    "main": "bin/index.js"
-}
+{ "name": "Node-Cli",
+  "main": "bin/index.js" }
