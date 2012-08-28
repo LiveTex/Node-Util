@@ -8,6 +8,12 @@ var cli = {};
 
 
 /**
+ * @const
+ * @type {string}
+ */
+cli.VERSION = '';
+
+/**
  * @constructor
  */
 cli.Arguments = function() {};
