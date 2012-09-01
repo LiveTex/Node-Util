@@ -1,6 +1,7 @@
 var util   = require('util');
 
 var cli = {};
+cli.VERSION = "0.0.1";
 cli.Logger = function() {
   this.__level = cli.Logger.LEVEL_INFO
 };
