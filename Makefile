@@ -4,6 +4,8 @@
 #	Variables
 #
 
+DESTDIR = 
+
 JS_ROOT_DIR  = ./
 JS_DEPS_DIRS =
 
@@ -21,15 +23,15 @@ all : js-export
 
 
 install :
-	mkdir -p $(INSTALL_PREFIX)/node/$(MODULE_NAME)/bin/;
-	mkdir -p $(INSTALL_PREFIX)/node/$(MODULE_NAME)/externs/;
-	cp package.json $(INSTALL_PREFIX)/node/$(MODULE_NAME)/;
-	cp bin/index.js $(INSTALL_PREFIX)/node/$(MODULE_NAME)/bin/;
-	cp externs/index.js $(INSTALL_PREFIX)/node/$(MODULE_NAME)/externs/;
+	mkdir -p $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/bin/;
+	mkdir -p $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/externs/;
+	cp package.json $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/;
+	cp bin/index.js $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/bin/;
+	cp externs/index.js $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/externs/;
 
 
 uninstall :
-	rm -rf $(INSTALL_PREFIX)/node/$(MODULE_NAME);
+	rm -rf $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME);
 
 
 clean : js-clean
