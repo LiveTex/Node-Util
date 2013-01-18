@@ -1,2 +1,4 @@
 { "name": "Node-Cli",
+  "package_name": "liblivetex-node-cli",
+  "version": "0.1.0",
   "main": "bin/index.js" }
