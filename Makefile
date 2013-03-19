@@ -1,39 +1,71 @@
-
-
 #
 #	Variables
 #
 
+JS_BUILD_HOME ?= /usr/lib/js-build-tools
+
 DESTDIR = 
 
 JS_ROOT_DIR  = ./
-JS_DEPS_DIRS =
+JS_CUSTOM_EXTERNS = 
+JS_DEFAULT_ENV = node
+JS_LEVEL = WHITESPACE_ONLY
 
-include build/js-variables.mk
+MODULE_NAME = cli
 
-MODULE_NAME ?= cli
-INSTALL_PREFIX ?= /usr/lib/
+DEV_INSTALL_PREFIX = /usr/lib/node
+DEPLOY_INSTALL_PREFIX = 
+DEPLOY_RELEASE = 
+DEPLOY_BRANCH = %DEPLOY_BRANCH%
 
+JS_DEPS_DIRS ?= 
+
+include $(JS_BUILD_HOME)/js-variables.mk
 
 #
 #	Rules
 #
 
-all : js-export
+all: build
 
 
-install :
-	mkdir -p $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/bin/;
-	mkdir -p $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/externs/;
-	cp package.json $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/;
-	cp bin/index.js $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/bin/;
-	cp externs/index.js $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME)/externs/;
+check: js-test-compile js-test-lint
 
 
-uninstall :
-	rm -rf $(DESTDIR)$(INSTALL_PREFIX)/node/$(MODULE_NAME);
+build: js-externs js-export
 
 
-clean : js-clean
+install: install-dev
 
-include build/js-rules.mk
+
+install-dev:
+	mkdir -p $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/bin/;
+	mkdir -p $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/externs/;
+	cp package.json $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/;
+	cp bin/index.js $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/bin/;
+	cp externs/index.js $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/externs/;
+
+
+install-deploy:
+	mkdir -p $(DEPLOY_INSTALL_PREFIX)/$(DEPLOY_RELEASE)/deps/$(MODULE_NAME)/bin/;
+	mkdir -p $(DEPLOY_INSTALL_PREFIX)/$(DEPLOY_RELEASE)/deps/$(MODULE_NAME)/externs/;
+	cp package.json $(DEPLOY_INSTALL_PREFIX)/$(DEPLOY_RELEASE)/deps/$(MODULE_NAME)/;
+	cp bin/index.js $(DEPLOY_INSTALL_PREFIX)/$(DEPLOY_RELEASE)/deps/$(MODULE_NAME)/bin/;
+	cp externs/index.js $(DEPLOY_INSTALL_PREFIX)/$(DEPLOY_RELEASE)/deps/$(MODULE_NAME)/externs/;
+
+
+uninstall: uninstall-dev
+
+
+uninstall-dev:
+	rm -rf $(DEV_INSTALL_PREFIX)/$(MODULE_NAME);
+
+
+uninstall-deploy:
+	rm -rf $(DEPLOY_INSTALL_PREFIX)/$(DEPLOY_RELEASE)/deps/$(MODULE_NAME);
+
+
+clean: js-clean
+
+
+include $(JS_BUILD_HOME)/js-rules.mk
