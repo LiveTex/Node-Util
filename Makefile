@@ -1,15 +1,14 @@
-
+JS_BUILD_HOME ?= /usr/lib/js-build-tools
 
 #
 #	Variables
 #
 
-DESTDIR = 
 
 JS_ROOT_DIR  = ./
 JS_DEPS_DIRS =
 
-include build/js-variables.mk
+include $(JS_BUILD_HOME)/js-variables.mk
 
 MODULE_NAME ?= cli
 INSTALL_PREFIX ?= /usr/lib/
@@ -36,4 +35,4 @@ uninstall :
 
 clean : js-clean
 
-include build/js-rules.mk
+include $(JS_BUILD_HOME)/js-rules.mk
