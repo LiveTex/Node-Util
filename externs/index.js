@@ -41,6 +41,22 @@ cli.Logger.LEVEL_ERROR = 1;
 cli.Logger.LEVEL_SILENT = 0;
 
 /**
+ * @enum {string}
+ */
+cli.Logger.__COLOR = {
+	GREEN: '\033[32m',
+	YELLOW: '\033[33m',
+	RED: '\033[31m',
+	RESET: '\033[0m'
+};
+
+/**
+ * @param {string} level Уровень вывода логов.
+ * @return {string} Цветной уровень.
+ */
+cli.Logger.__getColorizedLevel = function(level) {}
+
+/**
  * @param {*} console Объект консоли.
  */
 cli.Logger.prototype.setConsole = function(console) {};
