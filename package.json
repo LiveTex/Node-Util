@@ -1,0 +1,6 @@
+{
+  "name": "Node-Util",
+  "package_name": "liblivetex-node-util",
+  "version": "0.0.1",
+  "main": "bin/index.js"
+}
