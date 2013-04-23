@@ -47,13 +47,13 @@ util.decodeBase64Data = function(string, opt_forUrl) {};
  * @param {!Object} object Объект кодирования.
  * @return {string} Перекодированный в строку объект.
  */
-util.encodeFormData = function(object) {};
+util.stringify = function(object) {};
 
 /**
  * @param {string} data Закодированный объект.
  * @return {*} Раскодированный объект.
  */
-util.decodeFormData = function(data) {};
+util.parse = function(data) {};
 
 /**
  * @param {string} url Строка URL.
