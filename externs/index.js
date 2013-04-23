@@ -278,19 +278,22 @@ util.async.getRandomItem = function(items, complete, cancel) {};
 
 /**
  * @param {number} delay Время.
- * @return {!async.TaskFunction} Операция задержки.
+ * @return {function(*, !Function,
+ * function(string, number=))} Операция задержки.
  */
 util.async.delayActor = function(delay) {};
 
 /**
  * @param {string} name Имя.
- * @return {!async.TaskFunction} Операция задержки.
+ * @return {function(*, !Function,
+ * function(string, number=))} Операция задержки.
  */
 util.async.timeMeasureStartActor = function(name) {};
 
 /**
  * @param {string} name Имя.
- * @return {!async.TaskFunction} Операция задержки.
+ * @return {function(*, !Function,
+ * function(string, number=))} Операция задержки.
  */
 util.async.timeMeasureStopActor = function(name) {};
 

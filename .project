@@ -5,7 +5,7 @@
 name = node-util
 
 deps =
-externs = async
+externs =
 
 deps_dir = deps
 
