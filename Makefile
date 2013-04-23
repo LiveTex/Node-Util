@@ -17,7 +17,7 @@ DEV_INSTALL_PREFIX ?= /usr/lib/node
 DEPLOY_INSTALL_PREFIX =
 DEPLOY_RELEASE =
 
-JS_DEPS_DIRS ?=
+JS_DEPS_DIRS ?= /usr/lib/node/async/
 
 include $(JS_BUILD_HOME)/js-variables.mk
 

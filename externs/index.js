@@ -14,6 +14,7 @@ util.async = {};
  * @namespace
  */
 util.cache = {};
+
 /**
  * @param {Object} object Объект кодирования.
  * @return {string} Кодированный в строку объект.
@@ -53,6 +54,7 @@ util.encodeFormData = function(object) {};
  * @return {*} Раскодированный объект.
  */
 util.decodeFormData = function(data) {};
+
 /**
  * @param {string} url Строка URL.
  * @return {string} Закодированная строка.
