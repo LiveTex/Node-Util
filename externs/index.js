@@ -16,6 +16,11 @@ util.async = {};
 util.cache = {};
 
 /**
+ * @namespace
+ */
+util.base64 = {};
+
+/**
  * @param {Object} object Объект кодирования.
  * @return {string} Кодированный в строку объект.
  */
@@ -26,20 +31,6 @@ util.encodeJsonData = function(object) {};
  * @return {*} Раскодированный объект.
  */
 util.decodeJsonData = function(data) {};
-
-/**
- * @param {string} string Строка.
- * @param {boolean=} opt_forUrl Флаг URL-безопасного кодирования.
- * @return {string} Закодированная строка.
- */
-util.encodeBase64Data = function(string, opt_forUrl) {};
-
-/**
- * @param {string} string Закодированная строка.
- * @param {boolean=} opt_forUrl Флаг URL-безопасного кодирования.
- * @return {string} Строка.
- */
-util.decodeBase64Data = function(string, opt_forUrl) {};
 
 /**
  * Кодирование объекта в x-www-form-urlencoded форму.
@@ -401,5 +392,33 @@ util.cache.StringCache.prototype.has = function(key) {};
  * @return {number} Время жизни ключа.
  */
 util.cache.StringCache.prototype.ttl = function(key) {};
+
+/**
+ * @param {string} string
+ * @param {boolean=} opt_forUrl
+ * @return {string}
+ */
+util.base64.encodeBase64Browser = function(string, opt_forUrl) {};
+
+/**
+ * @param {string} string
+ * @param {boolean=} opt_forUrl
+ * @return {string}
+ */
+util.base64.decodeBase64Browser = function(string, opt_forUrl) {};
+
+/**
+ * @param {string} string Строка.
+ * @param {boolean=} opt_forUrl Флаг URL-безопасного кодирования.
+ * @return {string} Закодированная строка.
+ */
+util.base64.encodeBase64Node = function(string, opt_forUrl) {};
+
+/**
+ * @param {string} string Закодированная строка.
+ * @param {boolean=} opt_forUrl Флаг URL-безопасного кодирования.
+ * @return {string} Строка.
+ */
+util.base64.decodeBase64Node = function(string, opt_forUrl) {};
 
 
