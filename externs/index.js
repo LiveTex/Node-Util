@@ -56,7 +56,7 @@ util.encodeFormData = function(object) {};
  * Декодирование x-www-form-urlencoded формы в объект.
  *
  * @param {string} data Закодированный объект.
- * @return {*} Раскодированный объект.
+ * @return {!Object} Раскодированный объект.
  */
 util.decodeFormData = function(data) {};
 
@@ -165,7 +165,7 @@ util.getRandomItem = function(items, complete, cancel) {};
  * Создание безопасного объекта.
  *
  * @param {Object} obj Объект.
- * @return {!util.SafeObject} Безопаснй объект.
+ * @return {!util.object.SafeObject} Безопаснй объект.
  */
 util.safe = function(obj) {};
 
