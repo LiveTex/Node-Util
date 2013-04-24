@@ -228,6 +228,174 @@ util.hashMurmur = function(str, seed) {};
  */
 util.parseInt = function(number) {};
 
+/**
+ * @constructor
+ * @param {!Object} data Исходные данные.
+ */
+util.object.SafeObject = function(data) {};
 
+/**
+ * @return {!Object} Исходные данные.
+ */
+util.object.SafeObject.prototype.getCore = function() {};
+
+/**
+ * @param {...(string|number)} var_keys Путь к значению.
+ * @return {string|number|boolean|Object} Данные.
+ */
+util.object.SafeObject.prototype.get = function(var_keys) {};
+
+/**
+ * @param {string|number|boolean|Object} value Данные.
+ * @param {...(string|number)} var_keys Путь к значению.
+ */
+util.object.SafeObject.prototype.set = function(value, var_keys) {};
+
+/**
+ * @param {!Array.<(string|number)>} path Путь к значению.
+ * @return {string|number|boolean|Object} Данные.
+ */
+util.object.SafeObject.prototype.getByPath = function(path) {};
+
+/**
+ * @param {string|number|boolean|Object} value Данные.
+ * @param {!Array.<(string|number)>} path Путь к значению.
+ */
+util.object.SafeObject.prototype.setByPath = function(value, path) {};
+
+/**
+ * @param {...(string|number)} var_keys Путь к данным.
+ * @return {string} Результат.
+ */
+util.object.SafeObject.prototype.getString = function(var_keys) {};
+
+/**
+ * @param {...(string|number)} var_keys Путь к данным.
+ * @return {number} Результат.
+ */
+util.object.SafeObject.prototype.getNumber = function(var_keys) {};
+
+/**
+ * @param {...(string|number)} var_keys Путь к данным.
+ * @return {boolean} Результат.
+ */
+util.object.SafeObject.prototype.getBoolean = function(var_keys) {};
+
+/**
+ * @param {...(string|number)} var_keys Путь к данным.
+ * @return {Object} Результат.
+ */
+util.object.SafeObject.prototype.getObject = function(var_keys) {};
+
+/**
+ * @param {...(string|number)} var_keys Путь к данным.
+ * @return {!Array} Результат.
+ */
+util.object.SafeObject.prototype.getArray = function(var_keys) {};
+
+/**
+ * @constructor
+ */
+util.object.ArrayCache = function() {};
+
+/**
+ * @param {string} key Ключ.
+ * @return {!Array} Данные.
+ */
+util.object.ArrayCache.prototype.get = function(key) {};
+
+/**
+ * @param {string} key Ключ.
+ * @param {!Array} data Данные.
+ * @param {number} timeout Ключ.
+ */
+util.object.ArrayCache.prototype.set = function(key, data, timeout) {};
+
+/**
+ * @param {string} key Ключ поля.
+ */
+util.object.ArrayCache.prototype.remove = function(key) {};
+
+/**
+ * @param {string} key Ключ поля.
+ * @return {boolean} Наличие ключа.
+ */
+util.object.ArrayCache.prototype.has = function(key) {};
+
+/**
+ * @param {string} key Ключ поля.
+ * @return {number} Время жизни ключа.
+ */
+util.object.ArrayCache.prototype.ttl = function(key) {};
+
+/**
+ * @constructor
+ */
+util.object.ObjectCache = function() {};
+
+/**
+ * @param {string} key Ключ.
+ * @return {Object} Данные.
+ */
+util.object.ObjectCache.prototype.get = function(key) {};
+
+/**
+ * @param {string} key Ключ.
+ * @param {!Object} data Данные.
+ * @param {number} timeout Ключ.
+ */
+util.object.ObjectCache.prototype.set = function(key, data, timeout) {};
+
+/**
+ * @param {string} key Ключ поля.
+ */
+util.object.ObjectCache.prototype.remove = function(key) {};
+
+/**
+ * @param {string} key Ключ поля.
+ * @return {boolean} Наличие ключа.
+ */
+util.object.ObjectCache.prototype.has = function(key) {};
+
+/**
+ * @param {string} key Ключ поля.
+ * @return {number} Время жизни ключа.
+ */
+util.object.ObjectCache.prototype.ttl = function(key) {};
+
+/**
+ * @constructor
+ */
+util.object.StringCache = function() {};
+
+/**
+ * @param {string} key Ключ.
+ * @return {string} Данные.
+ */
+util.object.StringCache.prototype.get = function(key) {};
+
+/**
+ * @param {string} key Ключ.
+ * @param {string} data Данные.
+ * @param {number} timeout Ключ.
+ */
+util.object.StringCache.prototype.set = function(key, data, timeout) {};
+
+/**
+ * @param {string} key Ключ поля.
+ */
+util.object.StringCache.prototype.remove = function(key) {};
+
+/**
+ * @param {string} key Ключ поля.
+ * @return {boolean} Наличие ключа.
+ */
+util.object.StringCache.prototype.has = function(key) {};
+
+/**
+ * @param {string} key Ключ поля.
+ * @return {number} Время жизни ключа.
+ */
+util.object.StringCache.prototype.ttl = function(key) {};
 
 
