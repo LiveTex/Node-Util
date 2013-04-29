@@ -13,7 +13,7 @@ util.object = {};
 /**
  * Кодирование объекта в формат json.
  *
- * @param {Object} object Объект кодирования.
+ * @param {*} object Объект кодирования.
  * @return {string} Кодированный в строку объект.
  */
 util.encodeJsonData = function(object) {};
@@ -262,36 +262,6 @@ util.object.SafeObject.prototype.getByPath = function(path) {};
  * @param {!Array.<(string|number)>} path Путь к значению.
  */
 util.object.SafeObject.prototype.setByPath = function(value, path) {};
-
-/**
- * @param {...(string|number)} var_keys Путь к данным.
- * @return {string} Результат.
- */
-util.object.SafeObject.prototype.getString = function(var_keys) {};
-
-/**
- * @param {...(string|number)} var_keys Путь к данным.
- * @return {number} Результат.
- */
-util.object.SafeObject.prototype.getNumber = function(var_keys) {};
-
-/**
- * @param {...(string|number)} var_keys Путь к данным.
- * @return {boolean} Результат.
- */
-util.object.SafeObject.prototype.getBoolean = function(var_keys) {};
-
-/**
- * @param {...(string|number)} var_keys Путь к данным.
- * @return {Object} Результат.
- */
-util.object.SafeObject.prototype.getObject = function(var_keys) {};
-
-/**
- * @param {...(string|number)} var_keys Путь к данным.
- * @return {!Array} Результат.
- */
-util.object.SafeObject.prototype.getArray = function(var_keys) {};
 
 /**
  * @constructor
