@@ -53,12 +53,11 @@ util.decodeBase64 = function(string, opt_forUrl) {};
 util.encodeFormData = function(object) {};
 
 /**
- * Декодирование x-www-form-urlencoded формы в объект.
- *
- * @param {string} data Закодированный объект.
- * @return {!Object} Раскодированный объект.
+ * @param {string} formData Данные в формате x-www-form-urlencoded.
+ * @param {string=} opt_separator Разделитель.
+ * @return {!Object} Результат распарсинга.
  */
-util.decodeFormData = function(data) {};
+util.decodeFormData = function(formData, opt_separator) {};
 
 /**
  * Кодирование строки url.
