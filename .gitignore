@@ -1,4 +1,3 @@
 bin/*.o
-build/
 .idea/
 node_modules
