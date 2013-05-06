@@ -27,8 +27,8 @@ build: js-externs js-export
 install: install-dev
 
 install-dev:
-	mkdir -p $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/bin
-	mkdir -p $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/externs
+	mkdir -p $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/bin/;
+	mkdir -p $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/externs/;
 	cp package.json $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/;
 	cp bin/index.js $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/bin/;
 	cp externs/index.js $(DEV_INSTALL_PREFIX)/$(MODULE_NAME)/externs/;
