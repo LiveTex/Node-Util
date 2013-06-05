@@ -53,9 +53,10 @@ util.decodeBase64 = function(string, opt_forUrl) {};
  * Кодирование объекта в x-www-form-urlencoded форму.
  *
  * @param {!Object} object Объект кодирования.
+ * @param {string=} opt_separator Разделитель.
  * @return {string} Перекодированный в строку объект.
  */
-util.encodeFormData = function(object) {};
+util.encodeFormData = function(object, opt_separator) {};
 
 /**
  * @param {string} formData Данные в формате x-www-form-urlencoded.

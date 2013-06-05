@@ -1,7 +1,7 @@
 {
   "name": "node-util",
   "main": "bin/index.js",
-  "version": "0.0.6",
+  "version": "0.1.0",
 
   "scripts": {
     "prepublish": "make clean && make check && make"
