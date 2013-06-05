@@ -11,6 +11,11 @@ util.VERSION = '0.0.1';
 util.object = {};
 
 /**
+ * @namespace
+ */
+util.uid = {};
+
+/**
  * Кодирование объекта в формат json.
  *
  * @param {*} object Объект кодирования.
@@ -366,5 +371,27 @@ util.object.StringCache.prototype.has = function(key) {};
  * @return {number} Время жизни ключа.
  */
 util.object.StringCache.prototype.ttl = function(key) {};
+
+/**
+ * @interface
+ */
+util.uid.IIdGenerator = function() {};
+
+/**
+ * @return {string} Созданный идетификатор.
+ */
+util.uid.IIdGenerator.prototype.generateId = function() {};
+
+/**
+ * @constructor
+ * @implements {util.uid.IIdGenerator}
+ * @param {string} prefix Префикс.
+ */
+util.uid.PrefixIdGenerator = function(prefix) {};
+
+/**
+ * @inheritDoc
+ */
+util.uid.PrefixIdGenerator.prototype.generateId = function() {};
 
 
