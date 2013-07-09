@@ -1,15 +1,10 @@
 var cli = require('../bin');
 
+cli.args.registerValue('a');
+cli.args.registerValue('b');
 
-var args = new cli.Arguments();
-args.registerValue('hello_1');
-args.registerValue('hello_2');
-args.extractValues(process.argv);
+cli.args.extractValues(process.argv);
 
-console.log(
-  args.getArray('hello_1'),
-  args.getString('hello_1'),
-  args.getNumber('hello_1'),
-  args.getBoolean('hello_1')
-);
+console.log(cli.args.getString('a'));
+console.log(cli.args.getString('b'));
 
