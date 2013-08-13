@@ -387,8 +387,9 @@ util.uid.IIdGenerator.prototype.generateId = function() {};
  * @constructor
  * @implements {util.uid.IIdGenerator}
  * @param {string} prefix Префикс.
+ * @param {boolean=} opt_isIncremental Использовать ли инкремент.
  */
-util.uid.PrefixIdGenerator = function(prefix) {};
+util.uid.PrefixIdGenerator = function(prefix, opt_isIncremental) {};
 
 /**
  * @inheritDoc
