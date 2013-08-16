@@ -396,4 +396,9 @@ util.uid.PrefixIdGenerator = function(prefix, opt_isIncremental) {};
  */
 util.uid.PrefixIdGenerator.prototype.generateId = function() {};
 
+/**
+ * @return {string} Префикс.
+ */
+util.uid.PrefixIdGenerator.prototype.getPrefix = function() {};
+
 
