@@ -1,3 +1,48 @@
 var util = require('../bin');
 
-console.log(util.decodeFormData('__m=GET&__c=njr_1_callback&__q=hold_timeout%3D1000%26destroy_timeout%3D10000%26hold_for_auth%3Dfalse&__t=jsonp'));
+var robot = {
+  limbs: {
+    rl: "rear left leg",
+    rr: "rear right leg",
+    fl: "front left leg",
+    fr: "front right leg",
+    antenna: "Wi-Fi robot antenna"
+  },
+  engine: {
+    type: "electric",
+    power: "200W"
+  },
+  weapon: {
+    chainsaw: {
+      damage: "100500 DPS"
+    },
+    knifes: {
+      damage: "50250 DPS"
+    }
+  }
+};
+
+var cat = {
+  limbs: {
+    rl: "rear left leg",
+    rr: "rear right leg",
+    fl: "front left leg",
+    fr: "front right leg",
+    tail: "fur cat tail"
+  },
+  engine: {
+    type: "meaty",
+    power: "1 catpower"
+  },
+  weapon: {
+    claws: {
+      damage: "1 bite per second"
+    },
+    fangs: {
+      damage: "10 scratches per second"
+    }
+  }
+};
+
+console.info(util.merge(robot, cat, 3));
+console.info(util.merge(robot, cat));
