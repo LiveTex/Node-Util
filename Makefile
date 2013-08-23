@@ -7,7 +7,7 @@ JS_BUILD_HOME ?= /usr/lib/js-build-tools
 JS_ROOT_DIR  = ./
 JS_LEVEL = WHITESPACE_ONLY
 
-JS_DEPS_DIRS ?= 
+JS_DEPS_DIRS ?= node_modules/node-util/
 
 MODULE_NAME = node-cli
 DEV_INSTALL_PREFIX ?= /usr/lib/node
