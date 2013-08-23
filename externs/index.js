@@ -68,6 +68,51 @@ cli.Logger.prototype.setLevel = function(level) {};
 cli.Logger.prototype.getLevel = function() {};
 
 /**
+ * @constructor
+ */
+cli.Config = function() {};
+
+/**
+ * @param {string} filename Путь к файлу с конфигом.
+ */
+cli.Config.prototype.load = function(filename) {};
+
+/**
+ * @param {...(string|number)} var_args Путь к данным.
+ * @return {string} Результат.
+ */
+cli.Config.prototype.getString = function(var_args) {};
+
+/**
+ * @param {...(string|number)} var_args Путь к данным.
+ * @return {number} Результат.
+ */
+cli.Config.prototype.getNumber = function(var_args) {};
+
+/**
+ * @param {...(string|number)} var_args Путь к данным.
+ * @return {boolean} Результат.
+ */
+cli.Config.prototype.getBoolean = function(var_args) {};
+
+/**
+ * @param {...(string|number)} var_args Путь к данным.
+ * @return {Object} Результат.
+ */
+cli.Config.prototype.getObject = function(var_args) {};
+
+/**
+ * @param {...(string|number)} var_args Путь к данным.
+ * @return {!Array} Результат.
+ */
+cli.Config.prototype.getArray = function(var_args) {};
+
+/**
+ * @return {!cli.Config} Единственный экземпляр.
+ */
+cli.Config.getInstance = function() {};
+
+/**
  * @param {string} name Имя переменной.
  * @param {*=} opt_defaultValue Значение по-умолчанию.
  */
