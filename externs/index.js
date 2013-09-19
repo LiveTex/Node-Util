@@ -187,8 +187,19 @@ util.clone = function(object) {};
  *
  * @param {!Object} base Базовый объект.
  * @param {!Object} target Объект для наложения на базовый.
+ * @param {number=} opt_depth Глубина слияния.
+ * @return {!Object} Результат слияния.
  */
-util.merge = function(base, target) {};
+util.merge = function(base, target, opt_depth) {};
+
+/**
+ * Слияние двух объектов.
+ *
+ * @param {!Object} base Базовый объект.
+ * @param {!Object} target Объект для наложения на базовый.
+ * @return {!Object} Результат слияния.
+ */
+util.mergeRecursive = function(base, target) {};
 
 /**
  * Сравнение двух объектов.
@@ -245,16 +256,16 @@ util.object.SafeObject = function(data) {};
 util.object.SafeObject.prototype.getCore = function() {};
 
 /**
- * @param {...(string|number)} var_keys Путь к значению.
+ * @param {...(string|number)} var_args Путь к значению.
  * @return {string|number|boolean|Object} Данные.
  */
-util.object.SafeObject.prototype.get = function(var_keys) {};
+util.object.SafeObject.prototype.get = function(var_args) {};
 
 /**
  * @param {string|number|boolean|Object} value Данные.
- * @param {...(string|number)} var_keys Путь к значению.
+ * @param {...(string|number)} var_args Путь к значению.
  */
-util.object.SafeObject.prototype.set = function(value, var_keys) {};
+util.object.SafeObject.prototype.set = function(value, var_args) {};
 
 /**
  * @param {!Array.<(string|number)>} path Путь к значению.
