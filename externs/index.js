@@ -69,8 +69,9 @@ cli.Logger.prototype.getLevel = function() {};
 
 /**
  * @constructor
+ * @param {!Object=} opt_data Данные.
  */
-cli.Config = function() {};
+cli.Config = function(opt_data) {};
 
 /**
  * @param {string} filename Путь к файлу с конфигом.
