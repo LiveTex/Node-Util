@@ -78,6 +78,11 @@ cli.Config = function() {};
 cli.Config.prototype.load = function(filename) {};
 
 /**
+ * @param {!Array.<string>} configs Массив путей к файлам конфигов.
+ */
+cli.Config.prototype.multiLoad = function(configs) {};
+
+/**
  * @param {...(string|number)} var_args Путь к данным.
  * @return {string} Результат.
  */
