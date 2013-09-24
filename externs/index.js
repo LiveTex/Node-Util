@@ -69,7 +69,7 @@ cli.Logger.prototype.getLevel = function() {};
 
 /**
  * @constructor
- * @param {!Object=} opt_data Данные.
+ * @param {Object=} opt_data Данные.
  */
 cli.Config = function(opt_data) {};
 
