@@ -104,8 +104,15 @@ cli.Config.prototype.getBoolean = function(var_args) {};
 /**
  * @param {...(string|number)} var_args Путь к данным.
  * @return {Object} Результат.
+ * @deprecated Небезопасный метод.
  */
 cli.Config.prototype.getObject = function(var_args) {};
+
+/**
+ * @param {...(string|number)} var_args Путь к данным.
+ * @return {!Array.<string>} Результат.
+ */
+cli.Config.prototype.getObjectKeys = function(var_args) {};
 
 /**
  * @param {...(string|number)} var_args Путь к данным.
