@@ -126,13 +126,6 @@ cli.Config.prototype.getArray = function(var_args) {};
 cli.Config.prototype.extract = function(var_args) {};
 
 /**
- * @param {number} index Индекс.
- * @param {...(string|number)} var_args Путь к данным.
- * @return {!cli.Config} Конфиг.
- */
-cli.Config.prototype.extractItem = function(index, var_args) {};
-
-/**
  * @return {!cli.Config} Единственный экземпляр.
  */
 cli.Config.getInstance = function() {};
