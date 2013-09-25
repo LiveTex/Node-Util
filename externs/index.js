@@ -120,6 +120,12 @@ cli.Config.prototype.getObjectKeys = function(var_args) {};
 cli.Config.prototype.getArray = function(var_args) {};
 
 /**
+ * @param {...(string|number)} var_args Путь к данным.
+ * @return {!cli.Config} Конфиг.
+ */
+cli.Config.prototype.extract = function(var_args) {};
+
+/**
  * @return {!cli.Config} Единственный экземпляр.
  */
 cli.Config.getInstance = function() {};
