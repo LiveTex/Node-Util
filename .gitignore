@@ -1,5 +1,6 @@
 bin/
 build/
+externs/
 .idea/
 *.iml
 node_modules/
