@@ -9,12 +9,12 @@ Extension for native nodejs module util.
 
 ## Provides methods for:
 
-### Encode and decode:
+### Encoding and decoding:
 + JSON
 + Base64
 + x-www-form-urlencoded
 
-### Work with:
+### Handling:
 + Safe object
 + String cache
 + Array cache
@@ -25,7 +25,7 @@ Extension for native nodejs module util.
 + binds function to context
 + clones, merges and compares objects
 + handles arrays
-and other useful functions.
+and provides other useful functions.
 
 
 ## License
