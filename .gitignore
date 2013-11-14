@@ -1,8 +1,8 @@
-bin/
-build/
-externs/
-.idea/
 *.iml
+*.log
+.project
+.build/
+.idea/
+.npmignore/
+bin/
 node_modules/
-npm-debug.log
-

@@ -1,9 +1,13 @@
 {
-  "name": "node-util",
+  "name": "livetex-util",
   "main": "bin/index.js",
-  "version": "0.1.2-6",
+  "version": "1.0.0",
 
   "scripts": {
     "prepublish": "make clean && make check && make"
+  },
+
+  "dependencies": {
+    "livetex-tools": "*"
   }
 }
