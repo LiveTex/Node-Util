@@ -1,5 +1,4 @@
 
-
 # Livetex-Util
 
 Extension for native nodejs module util.
@@ -24,7 +23,7 @@ Extension for native nodejs module util.
 + implements algorithm for hash
 + binds function to context
 + clones, merges and compares objects
-+ handles arrays
++ handles arrays  
 and provides other useful functions.
 
 
