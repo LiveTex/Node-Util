@@ -1,10 +1,10 @@
 {
-  "name": "livetex-util",
+  "name": "livetex-node-util",
   "main": "bin/index.js",
   "version": "1.0.0",
 
   "scripts": {
-    "prepublish": "make clean && make check && make"
+    "prepublish": "make index.js-clean && make index.js-check && make"
   },
 
   "dependencies": {
