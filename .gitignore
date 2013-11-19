@@ -3,6 +3,5 @@
 .project
 .build/
 .idea/
-.npmignore/
 bin/
 node_modules/
