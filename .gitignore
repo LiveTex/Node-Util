@@ -1,5 +1,8 @@
-bin/
-build/
 *.iml
+*.log
+.project
+.build/
 .idea/
+bin/
+externs/
 node_modules/

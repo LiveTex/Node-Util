@@ -8,6 +8,7 @@
   },
 
   "dependencies": {
-    "node-util": "*"
+    "node-util": "*",
+    "livetex-tools": "*"
   }
 }

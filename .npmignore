@@ -1,4 +1,6 @@
-build/
 *.iml
-.idea/
+*.log
+.build/
 .gitignore
+.project
+.idea/
