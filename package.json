@@ -1,9 +1,11 @@
 {
   "name": "node-util",
   "main": "bin/index.js",
-  "version": "0.1.2-7",
-
+  "version": "0.1.8-1",
   "scripts": {
-    "prepublish": "make clean && make check && make"
+    "prepublish": "make index.js-clean && make index.js-check && make"
+  },
+  "dependencies": {
+    "livetex-tools": ">=0.1.0"
   }
 }

@@ -1,4 +1,7 @@
-build/
-.idea/
 *.iml
+*.log
+.build/
 .gitignore
+.project
+.idea/
+node_modules/
