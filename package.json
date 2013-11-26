@@ -6,6 +6,6 @@
     "prepublish": "make index.js-clean && make index.js-check && make"
   },
   "dependencies": {
-    "livetex-tools": "0.0.12"
+    "livetex-tools": ">=0.1.0"
   }
 }
