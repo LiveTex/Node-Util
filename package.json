@@ -3,7 +3,7 @@
   "main": "bin/index.js",
   "version": "0.1.12",
   "scripts": {
-    "prepublish": "npm install livetex-tools && make publish && npm uninstall livetex-tools"
+    "install": "npm install livetex-tools && make && npm uninstall livetex-tools"
   },
   "dependencies": {
     "livetex-tools": ">=0.1.0"
