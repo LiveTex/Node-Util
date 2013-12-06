@@ -1,10 +1,12 @@
 {
   "name": "node-util",
   "main": "bin/index.js",
-  "version": "0.1.14",
+  "version": "0.2.0",
+
   "scripts": {
     "install": "npm install livetex-tools && make"
   },
+
   "dependencies": {
     "livetex-tools": "*"
   }
