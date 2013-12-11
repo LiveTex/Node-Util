@@ -1,7 +1,9 @@
 
 util/util.js
 
-util/object/safe-object.js
+util/i-safe-object.js
+util/safe-object.js
+
 util/object/array-cache.js
 util/object/object-cache.js
 util/object/string-cache.js
