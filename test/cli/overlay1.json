@@ -1,0 +1,7 @@
+{
+  "database": {
+    "redis": {
+      "shard_strategy": "Valuehash"
+    }
+  }
+}
