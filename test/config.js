@@ -1,8 +1,9 @@
 var cli = require('../bin');
+var path = require('path');
 
 var filepath = function(filename) {
-  return process.cwd() + '/' + filename;
-}
+  return path.normalize(__dirname + '/' + filename);
+};
 
 var config = new cli.Config();
 
