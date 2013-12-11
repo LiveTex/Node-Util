@@ -11,7 +11,6 @@ util/object/string-cache.js
 util/uid/i-id-generator.js
 util/uid/prefix-id-generator.js
 
-util/cli/cli.js
-util/cli/logger.js
-util/cli/config.js
-util/cli/args/args.js
+util/logger.js
+util/config.js
+util/args/args.js
