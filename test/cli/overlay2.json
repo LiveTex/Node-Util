@@ -1,0 +1,11 @@
+{
+  "listen_host": "foobar.org",
+  "listen_port": 80,
+  "database": {
+    "cold_storage": {
+      "type": "PgSQL",
+      "host": "localhost",
+      "port": 1033
+    }
+  }
+}
