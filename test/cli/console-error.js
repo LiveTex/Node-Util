@@ -1,7 +1,7 @@
 
 
 var util = require('../../bin/index.js');
-var logger = new util.Logger();
+var logger = new util.cli.Logger();
 logger.setConsole(console);
 
 function anotherFunctionName() {

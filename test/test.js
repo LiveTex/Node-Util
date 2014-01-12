@@ -44,5 +44,5 @@ var cat = {
   }
 };
 
-console.info(util.merge(robot, cat, 3));
-console.info(util.merge(robot, cat));
+console.info(util.obj.merge(robot, cat, 3));
+console.info(util.obj.merge(robot, cat));

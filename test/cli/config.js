@@ -5,7 +5,7 @@ var filepath = function(filename) {
   return path.normalize(__dirname + '/' + filename);
 };
 
-var config = new util.Config();
+var config = new util.cli.Config();
 
 
 var fp = filepath('base.json');

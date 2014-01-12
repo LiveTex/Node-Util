@@ -1,15 +1,18 @@
 {
   "name": "node-util",
   "main": "bin/index.js",
-  "version": "0.3.10",
+  "version": "0.4.0",
+
   "scripts": {
     "install": "npm install livetex-tools && make"
   },
-  "dependencies": {
-    "livetex-tools": "*"
-  },
+
   "repository": {
     "type": "git",
     "url": "https://github.com/LiveTex/Node-Util"
+  },
+
+  "dependencies": {
+    "livetex-tools": "*"
   }
 }
