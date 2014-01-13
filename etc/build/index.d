@@ -11,8 +11,6 @@ util/hash/hash.js
 util/uid/i-id-generator.js
 util/uid/prefix-id-generator.js
 
-util/format/format.js
-
 util/arr/arr.js
 
 util/cli/config.js
