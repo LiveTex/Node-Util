@@ -3,7 +3,7 @@
   "main": "bin/index.js",
   "version": "1.0.0",
   "scripts": {
-    "install": "npm install livetex-tools && make"
+    "install": "npm install livetex-tools && make js"
   },
   "repository": {
     "type": "git",
