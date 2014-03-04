@@ -1,9 +1,9 @@
 {
   "name": "node-util",
   "main": "bin/index.js",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "scripts": {
-    "install": "npm install livetex-tools && make js"
+    "prepublish": "npm install livetex-tools && make js"
   },
   "repository": {
     "type": "git",
