@@ -19,3 +19,4 @@ util/cli/cli.js
 
 util/collector/collect-event.js
 util/collector/i-log-collector.js
+util/collector/i-collect-event.js
