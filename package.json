@@ -1,7 +1,7 @@
 {
   "name": "node-util",
   "main": "bin/index.js",
-  "version": "0.4.12",
+  "version": "0.4.13",
   "scripts": {
     "install": "npm update"
   },
