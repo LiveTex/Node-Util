@@ -1,15 +1,34 @@
 {
-  "name": "livetex-node-util",
+  "name": "node-util",
   "main": "bin/index.js",
   "version": "1.0.0",
   "scripts": {
-    "install": "npm install livetex-tools && make"
+    "install": "npm update"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/LiveTex/Node-Util"
   },
   "dependencies": {
-    "livetex-tools": "*"
-  }
+    "livetex-tools": "2.0.0"
+  },
+  "license": "Modified BSD License",
+  "contributors": [
+    {
+      "name": "Sergey Kononenko",
+      "email": "kononencheg@gmail.com"
+    },
+    {
+      "name": "Evgeny Mikheev",
+      "email": "eudgee@gmail.com"
+    },
+    {
+      "name": "Maxim Kalachev",
+      "email": "kalachevmax@gmail.com"
+    },
+    {
+      "name": "Valeria Lepina",
+      "email": "divergence082@gmail.com"
+    }
+  ]
 }
