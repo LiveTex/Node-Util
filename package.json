@@ -10,7 +10,7 @@
     "url": "https://github.com/LiveTex/Node-Util"
   },
   "dependencies": {
-    "livetex-tools": "2.0.0"
+    "livetex-tools": "2.0.1"
   },
   "license": "Modified BSD License",
   "contributors": [
