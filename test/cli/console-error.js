@@ -1,8 +1,6 @@
 
 
 var util = require('../../bin/index.js');
-var logger = new util.cli.Logger();
-logger.setConsole(console);
 
 function anotherFunctionName() {
   console.error('yoo');
