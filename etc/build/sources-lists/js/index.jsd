@@ -14,7 +14,8 @@ util/uid/prefix-id-generator.js
 util/arr/arr.js
 
 util/cli/cli.js
-util/cli/config.js
+
+util/config/config.js
 
 util/log/log.js
 util/log/i-event-collector.js
