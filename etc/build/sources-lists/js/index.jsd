@@ -3,8 +3,10 @@ util/util.js
 util/fn/fn.js
 
 util/obj/obj.js
-util/obj/safe-object.js
 util/obj/i-safe-object.js
+util/obj/safe-object.js
+util/obj/i-cache.js
+util/obj/cache.js
 
 util/hash/hash.js
 
@@ -24,6 +26,3 @@ util/log/color.js
 
 
 util/io/io.js
-util/io/i-cache.js
-util/io/cache.js
-util/io/decode-result.js
