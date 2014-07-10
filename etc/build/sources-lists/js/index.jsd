@@ -3,8 +3,10 @@ util/util.js
 util/fn/fn.js
 
 util/obj/obj.js
-util/obj/safe-object.js
 util/obj/i-safe-object.js
+util/obj/safe-object.js
+util/obj/i-cache.js
+util/obj/cache.js
 
 util/hash/hash.js
 
@@ -21,3 +23,6 @@ util/log/log.js
 util/log/i-event-collector.js
 util/log/prefix.js
 util/log/color.js
+
+
+util/io/io.js
