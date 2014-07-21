@@ -20,7 +20,6 @@ util/cli/cli.js
 util/config/config.js
 
 util/log/log.js
-util/log/event-collector.js
 util/log/prefix.js
 util/log/color.js
 
