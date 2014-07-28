@@ -1,12 +1,10 @@
 {
-  "name": "node-util", 
-  "main": "bin/index.js", 
-  "version": "0.5.4", 
-
+  "name": "node-util",
+  "main": "bin/index.js",
+  "version": "0.5.6",
   "scripts": {
     "install": "npm update"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/LiveTex/Node-Util"
