@@ -1,10 +1,9 @@
 {
-  "name": "node-util",
-  "main": "bin/index.js",
-  "version": "0.5.7",
-
+  "name": "node-util", 
+  "main": "bin/index.js", 
+  "version": "0.5.8", 
   "repository": {
-    "type": "git",
+    "type": "git", 
     "url": "https://github.com/LiveTex/Node-Util"
   }
 }
