@@ -1,7 +1,5 @@
 util/util.js
 
-util/fn/fn.js
-
 util/obj/obj.js
 util/obj/i-safe-object.js
 util/obj/safe-object.js
@@ -10,14 +8,7 @@ util/obj/cache.js
 
 util/hash/hash.js
 
-util/uid/i-id-generator.js
-util/uid/prefix-id-generator.js
-
 util/arr/arr.js
-
-util/cli/cli.js
-
-util/config/config.js
 
 util/log/log.js
 util/log/prefix.js
