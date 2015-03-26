@@ -4,6 +4,6 @@
   "version": "1.0.0",
 
   "publishConfig": {
-    "registry": "http://sonatype-nexus.livetex.ru/nexus/content/repositories/livetex-npm/"
+    "registry": "http://sonatype-nexus.livetex.ru/nexus/content/repositories/livetex-npm-new/"
   }
 }
